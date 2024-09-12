@@ -7,12 +7,13 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Título</th>
+            <th>Nombre Proyecto</th>
             <th>Descripción</th>
             <th>Fecha de Creación</th>
-            <th>Activo</th>
+            <th>Estado</th>
             <th>Acciones</th>
         </tr>
+
     </thead>
     <tbody>
         @foreach ($projects as $project)
@@ -31,8 +32,8 @@
                 </form>
             </td>
         </tr>
+
         @endforeach
     </tbody>
 </table>
 @endsection
-

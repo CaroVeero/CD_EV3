@@ -9,21 +9,25 @@
         <label for="titulo">Título</label>
         <input type="text" name="titulo" class="form-control" value="{{ $project->titulo }}" required>
     </div>
+
     <div class="form-group">
         <label for="descripcion">Descripción</label>
         <textarea name="descripcion" class="form-control" required>{{ $project->descripcion }}</textarea>
     </div>
+
     <div class="form-group">
         <label for="fecha_creacion">Fecha de Creación</label>
         <input type="date" name="fecha_creacion" class="form-control" value="{{ $project->fecha_creacion }}" required>
     </div>
+
     <div class="form-group">
-        <label for="activo">Activo</label>
+        <label for="activo">Estado</label>
         <select name="activo" class="form-control" required>
-            <option value="1" {{ $project->activo ? 'selected' : '' }}>Sí</option>
-            <option value="0" {{ !$project->activo ? 'selected' : '' }}>No</option>
+            <option value="1" {{ $project->activo ? 'selected' : '' }}>Activo</option>
+            <option value="0" {{ !$project->activo ? 'selected' : '' }}>Desactivado</option>
         </select>
     </div>
+
     <button type="submit" class="btn btn-primary">Actualizar</button>
 </form>
-@endsection
+@endsectio
