@@ -45,6 +45,7 @@ class ProjectController extends Controller
         return view('projects.edit', compact('project'));
     }
 
+    
     public function update(Request $request, Project $project)
     {
         $request->validate([

@@ -90,7 +90,7 @@
       <div class="user-panel mt-3 pb-3 mb-3 d-flex" style="align-items: center;">
       <form id="logout-form" action="{{ route('logout') }}" method="POST">
             @csrf
-            <button type="submit" class="btn btn-warning">Cerrar sesion</button>
+            <button type="submit" class="btn btn-warning">Cerrar sesión</button>
         </form>
       </div>
 
